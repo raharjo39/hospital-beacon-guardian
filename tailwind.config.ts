@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				hospital: {
+					primary: '#0EA5E9',
+					secondary: '#9b87f5',
+					tertiary: '#7E69AB',
+					light: '#D6BCFA',
+					alert: '#ea384c',
+					success: '#10B981',
+					warning: '#F97316',
+					gray: '#8E9196',
+					dark: '#1A1F2C',
 				}
 			},
 			borderRadius: {
@@ -84,11 +96,38 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': { 
+						opacity: '1' 
+					},
+					'50%': { 
+						opacity: '0.5' 
+					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'ping-once': {
+					'75%, 100%': {
+						transform: 'scale(1.5)',
+						opacity: '0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 2s infinite ease-in-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'ping-once': 'ping-once 1s cubic-bezier(0, 0, 0.2, 1)'
 			}
 		}
 	},
