@@ -1,15 +1,14 @@
 
 import React, { useState } from 'react';
-import { Bell, Menu, X } from 'lucide-react';
+import { Bell, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Sidebar } from './Sidebar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { useToast } from '@/components/ui/sonner';
+import { toast } from '@/components/ui/sonner';
 
 export const Topbar = () => {
-  const { toast } = useToast();
   const [notifications, setNotifications] = useState([
     {
       id: 1,

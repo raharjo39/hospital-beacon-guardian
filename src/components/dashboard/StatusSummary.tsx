@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Alert, AlertCircle, AlertTriangle, CheckCircle } from 'lucide-react';
+import { AlertCircle, AlertTriangle, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 interface StatusSummaryProps {
