@@ -10,6 +10,7 @@ import AssetList from "./pages/AssetList";
 import PatientList from "./pages/PatientList";
 import AlertList from "./pages/AlertList";
 import HistoryList from "./pages/HistoryList";
+import TimeLogs from "./pages/TimeLogs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/patients" element={<PatientList />} />
             <Route path="/alerts" element={<AlertList />} />
             <Route path="/history" element={<HistoryList />} />
+            <Route path="/time-logs" element={<TimeLogs />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
